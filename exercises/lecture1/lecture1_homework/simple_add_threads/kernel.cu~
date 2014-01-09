@@ -5,7 +5,7 @@
 __global__ void add(int *a, int *b, int *c)
 {
 	/* insert correct index so that each element is calculated by a different thread */
-	c[threadIdx.x] = a[threadIdx.x] + b[threadIdx.x];
+	c[blockIdx.x] = a[blockIdx.x] + b[blockIdx.x];
 }
 
 /* experiment with different values of N */

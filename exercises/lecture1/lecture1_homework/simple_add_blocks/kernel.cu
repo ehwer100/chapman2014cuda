@@ -43,9 +43,7 @@ int main()
 	/* copy inputs to device */
 	
 	cudaMemcpy( d_a, a, size, cudaMemcpyHostToDevice );
-	/* insert code to copy b to the device */
 	cudaMemcpy( d_b, b, size, cudaMemcpyHostToDevice);
-	//cudaMemcpy(d_c, c, size, cudaMemcpyHostToDevice
 
 	/* launch the kernel on the GPU */
 	/* finish this kernel launch with N blocks and 1 thread per block */

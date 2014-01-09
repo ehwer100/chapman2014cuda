@@ -63,6 +63,8 @@ int main()
 	cudaFree(d_b);
 	cudaFree(d_c);
 
+	/* additional clean up*/
+	...
 	
 	return 0;
 } /* end main */
